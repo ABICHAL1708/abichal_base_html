@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .attr("class", "progressYScale")
         .attr('transform', `translate(${margin.left}, 0)`);
 
-    Promise.all([d3.csv("../data/progress.csv")]).then(value => {
+    Promise.all([d3.csv("src/data/progress.csv")]).then(value => {
         progress_data = value[0];
 
         // Data wrangling for progress data
