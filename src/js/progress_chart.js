@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const width = parseInt(progress_svg.style("width").replace("px", ""));
     const height = parseInt(progress_svg.style("height").replace("px", ""));
     
-    const innerWidth = 800;
+    const innerWidth = width;
     const innerHeight = height - margin.top - margin.bottom;
 
     // AXES

@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Abichal Ghosh</title>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="src/js/progress_chart.js"></script>
         <script src="src/js/timeline_chart.js"></script>
         <script src="src/js/vars.js"></script>
-        <style>
-            svg {
-                width: 1500px;
-                height: 400px;
-                border:1px solid gray;
-                background-color: #fceed9;
-                overflow: hidden;
-            }
-        </style>
         <link rel="stylesheet" href="src/css/styles.css"> 
     </head>
     <body>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="about_me.html">About Me</a>
-            <a>Contact</a>
+        <div class = "sidenav">
+            <nav>
+                <ul>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#timeline">Timeline</a>
+                </ul>
+            </nav>
         </div>
-        <div>
-            <h1>Brief Introduction</h1>
-            <p>Hello!!! I am Abichal Ghosh. I am currently pursuing my degree in MS CS at ASU and have previously done my BE in CS at BITS Pilani. 
-                To know more about me <a href = about_me.html>click here</a>.</p>
-        </div>
-        <div id = "timeline_chart">
-            <svg id = "timeline_svg">
-            </svg>
-        </div>
-        <div id = "progress_chart">
-            <svg id = "progress_svg">
-            </svg>
+        <div class = "main">
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="about_me.html">About Me</a>
+                <a>Contact</a>
+            </div>
+            <div id = "about">
+                <h1>Abichal Ghosh</h1>
+                <p> I am currently pursuing my degree in MS CS at ASU(2022-2024) and have previously done my BE in 
+                    CS at BITS Pilani(2018-2022).</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Augue eget arcu dictum varius duis at consectetur. Auctor eu 
+                    augue ut lectus arcu bibendum at varius vel. Dolor purus non enim praesent elementum facilisis 
+                    leo vel fringilla. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Malesuada 
+                    pellentesque elit eget gravida. Enim nulla aliquet porttitor lacus luctus accumsan tortor. 
+                    Venenatis urna cursus eget nunc scelerisque. Platea dictumst quisque sagittis purus. Donec 
+                    pretium vulputate sapien nec sagittis aliquam. Vitae ultricies leo integer malesuada nunc vel 
+                    risus commodo. Tempus iaculis urna id volutpat lacus. Dolor sit amet consectetur adipiscing. 
+                    Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Morbi tristique 
+                    senectus et netus. Nibh praesent tristique magna sit amet purus gravida. Pellentesque diam 
+                    volutpat commodo sed egestas egestas fringilla phasellus. Diam in arcu cursus euismod quis.</p>
+            </div>
+            <div id = "experience">
+                <h1>Experience</h1>
+                <div class = "exp-card">
+                    <h2>501CTHREE Corp.</h2>
+                    <h3>Machine Learning Engineer</h3>
+                    <ul>
+                        Refactored and debugged existing code for data collection from Raspberry Pis resulting in
+                        improved efficiency.
+                    </ul>
+                </div>
+                <div class = "exp-card">
+                    <h2>Computer Vision Center</h2>
+                    <h3>Machine Learning Intern</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class = "exp-card">
+                    <h2>RRSC-West(NRSC, ISRO)</h2>
+                    <h3>Machine Learning Intern</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projects">
+                <h1>Projects</h1>
+            </div>
+            <div id = "timeline">
+                <h1>Timeline Visualization</h1>
+                <div id = "timeline_chart">
+                    <svg id = "timeline_svg">
+                    </svg>
+                </div>
+                <div id = "progress_chart">
+                    <svg id = "progress_svg">
+                    </svg>
+                </div>
+            </div>
         </div>
     </body>
 
