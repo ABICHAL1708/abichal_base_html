@@ -7,10 +7,12 @@
         <script src="src/js/progress_chart.js"></script>
         <script src="src/js/timeline_chart.js"></script>
         <script src="src/js/vars.js"></script>
+        <script src="src/js/side_nav.js"></script>
         <link rel="stylesheet" href="src/css/styles.css"> 
     </head>
     <body>
-        <div class = "sidenav">
+        <div id="mySidebar" class = "sidenav">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
             <nav>
                 <ul>
                     <a href="#about">About</a>
@@ -20,7 +22,7 @@
                 </ul>
             </nav>
         </div>
-        <div class = "main">
+        <div id = "myMain" class = "main">
             <div class = "main-content">
                 <div class="topnav">
                     <a class="active" href="index.html">Home</a>
@@ -88,7 +90,7 @@
                                                 <li>
                                                     Implemented a new streamlined distributed system with separate folders and AWS DynamoDB 
                                                     tables to enable simultaneous real-time data collection and upload from multiple 
-                                                    Raspberry Pis across 4 different locations.
+                                                    Raspberry Pis across 4 locations.
                                                 </li>
                                                 <li>
                                                     Utilized AWS CloudWatch, Lambda, SQS, and SNS to create a real-time alarm system for the 
@@ -152,11 +154,11 @@
                                         <div class = "exp-content">
                                             <ul>
                                                 <li>
-                                                    Generated and exported 500+ Satellite Images from Google Earth Engine using 
+                                                    Generated 500+ Satellite Images from Google Earth Engine using 
                                                     JavaScript & Data Augmentation.
                                                 </li>
                                                 <li>
-                                                    Utilized DeepLabv3+ and UNet for high-res Satellite Image Segmentation to 
+                                                    Utilized DeepLabv3+ and UNet for Satellite Image Segmentation to 
                                                     detect Solar Farms and Sand Dunes.
                                                 </li>
                                                 <li>
