@@ -12,12 +12,12 @@ body, h1, h2, h3, h4, h5, h6, p{
     /* color: #621d04; */
 }
 
-div{
+/* div{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
-}
+} */
 
 .sidenav {
     height: 100%;
@@ -51,6 +51,13 @@ div{
     padding: 500px, 50, 50, 50;
 }
 
+.main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 svg {
     width: 100%;
     height: 400px;
@@ -65,7 +72,10 @@ svg {
     width: 90%;
     padding: 20px;
     margin: 10px;
-    background-color: rgb(253, 247, 236, 0.7);
+    background-color: rgb(253, 247, 236, 0.8);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
 }
 
 .company-card {
@@ -73,7 +83,8 @@ svg {
     width: 80%;
     padding: 20px;
     margin: 20px;
-    background-color: rgba(255, 227, 185, 0.6);
+    background-color: rgba(255, 227, 185, 0.7);
+    border-radius: 15px;
 }
 
 .exp-card:hover {
@@ -85,7 +96,108 @@ svg {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     background-color: rgb(255, 227, 185, 1.0);
 }
+
+.time-period {
+    width: 15%;
+    float: left;
+    font-size: 15px;
+}
+
+.exp-content {
+    width: 85%;
+    float: right;
+}
   
-.container {
+/* .container {
     padding: 20px 16px;
+} */
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-title {
+    width: 80%;
+    float: right;
+}
+
+ #experience > ul {
+    list-style: none; 
+    padding-left: 20px; 
+    position: relative; 
+}
+
+#experience > ul::before {
+    content: '';
+    position: absolute;
+    left: 10px; 
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: rgb(224, 174, 100); 
+}
+
+#experience > ul > li {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+#experience > ul > li::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20%;
+    width: 30px; 
+    height: 2px;
+    background-color: rgb(224, 174, 100);
+    /* transform: translateY(-50%);  */
+} 
+
+#experience > ul > li::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 20%;
+    width: 30px; 
+    height: 2px;
+    background-color: rgb(224, 174, 100);
+    /* transform: translateY(-50%);  */
+} 
+
+/* .company-card::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 50%;
+    width: 2px;
+    background-color: #ccc;
+} */
+
+.exp-card-wrapper {
+    position: relative;
+}
+
+.exp-card-wrapper::before {
+    content: '';
+    position: absolute;
+    left: -40px; /* Adjust this value as needed to align the line */
+    top: 50%; /* Center the line vertically with the card */
+    width: 20px;
+    height: 2px;
+    background-color: rgb(224, 174, 100);
+    transform: translateY(-50%);
+}
+
+.company-card::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust as needed to align with the card */
+    top: 20%;
+    bottom: 20%; /* Ensure the line spans the full height of the card */
+    width: 2px;
+    background-color: rgb(224, 174, 100); /* Vertical line color */
 }

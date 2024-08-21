@@ -21,126 +21,171 @@
             </nav>
         </div>
         <div class = "main">
-            <div class="topnav">
-                <a class="active" href="index.html">Home</a>
-                <a href="about_me.html">About Me</a>
-                <a>Contact</a>
-            </div>
-            <div id = "about">
-                <h1>Abichal Ghosh</h1>
-                <p> Recent MS CS Graduate from ASU, completed BE CS from BITS Pilani. Have interned and worked as a
-                    Software Developer Engineer and Machine Learning Engineer at 501CTHREE Corp.</p>
-            </div>
-            <div id = "experience">
-                <h1>Experience</h1>
-                <ul>
-                    <!-- 501CTHREE List -->
-                    <li>
-                        <div class = "company-card">
-                            <h2>501CTHREE Corp.</h2>
-                            <!-- MLE -->
-                            <div class = "exp-card">
-                                <h3>Machine Learning Engineer</h3>
-                                <ul>
-                                    <li>
-                                        Detected anomalies for enabling accurate failure detection in the data collected from 
-                                        the Raspberry Pis.
-                                    </li>
-                                    <li>
-                                        Trained a classification model with 85.7% accuracy on data with effective interpolation 
-                                        of missing values.
-                                    </li>
-                                    <li>
-                                        Designed and trained an LSTM based model with 92% accuracy for the classification of 
-                                        Time-Series data.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- SDE -->
-                            <div class = "exp-card">
-                                <h3>Software Developer Engineer</h3>
-                                <ul>
-                                    <li>
-                                        Refactored and debugged existing code for data collection from Raspberry Pis resulting
-                                        in improved efficiency.
-                                    </li>
-                                    <li>
-                                        Implemented a new streamlined distributed system with separate folders and AWS DynamoDB 
-                                        tables to enable simultaneous real-time data collection and upload from multiple 
-                                        Raspberry Pis across 4 different locations.
-                                    </li>
-                                    <li>
-                                        Utilized AWS CloudWatch, Lambda, SQS, and SNS to create a real-time alarm system for the 
-                                        Raspberry Pis.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- CVC -->
-                    <li>
-                        <div class = "company-card">
-                            <h2>Computer Vision Center(LAMP, UAB)</h2>
-                            <!-- Thesis -->
-                            <div class = "exp-card">
-                                <h3>Machine Learning Researcher</h3>
-                                <ul>
-                                    <li>
-                                        Analyzed image compression codecs and Variational Autoencoder(VAE) models to 
-                                        identify areas for improvement.
-                                    </li>
-                                    <li>
-                                        Visualized the Filters of the 1st layer of the models, and examined subsequent 
-                                        layers of the models using PCA, CKA, Canonical Correlational Analysis (CCA), 
-                                        Singular Vector Canonical Correlational Analysis (SVCCA), etc.
-                                    </li>
-                                    <li>
-                                        Improved the size and the performance by evaluating a prototype.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- RRSC -->
-                    <li>
-                        <div class = "company-card">
-                            <h2>RRSC West(NSRC, ISRO)</h2>
-                            <!-- Thesis -->
-                            <div class = "exp-card">
-                                <h3>Machine Learning Intern</h3>
-                                <ul>
-                                    <li>
-                                        Generated and exported 500+ Satellite Images from Google Earth Engine using 
-                                        JavaScript & Data Augmentation.
-                                    </li>
-                                    <li>
-                                        Utilized DeepLabv3+ and UNet for high-res Satellite Image Segmentation to 
-                                        detect Solar Farms and Sand Dunes.
-                                    </li>
-                                    <li>
-                                        Achieved autonomous target detection for the precise tracking and monitoring 
-                                        of solar farms(for maintenance) and sand dunes(An indicator for managing 
-                                        disasters, particularly sandstorms).
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-        
-            </div>
-            <div id = "projects">
-                <h1>Projects</h1>
-            </div>
-            <div id = "timeline">
-                <h1>Timeline Visualization</h1>
-                <div id = "timeline_chart">
-                    <svg id = "timeline_svg">
-                    </svg>
+            <div class = "main-content">
+                <div class="topnav">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="about_me.html">About Me</a>
+                    <a>Contact</a>
                 </div>
-                <div id = "progress_chart">
-                    <svg id = "progress_svg">
-                    </svg>
+                <div id = "about">
+                    <h1>Abichal Ghosh</h1>
+                    <p> Recent MS CS Graduate from ASU, completed BE CS from BITS Pilani. Have interned and worked as a
+                        Software Developer Engineer and Machine Learning Engineer at 501CTHREE Corp.</p>
+                </div>
+                <div id = "experience">
+                    <h1>Experience</h1>
+                    <ul>
+                        <!-- 501CTHREE List -->
+                        <li>
+                            <div class = "company-card">
+                                <h2>501CTHREE Corp.</h2>
+                                <!-- MLE -->
+                                <div class = "exp-card-wrapper">
+                                    <div class = "exp-card">
+                                        <div class = "exp-header">
+                                            <div class = "time-period">
+                                                July 2024 - Current
+                                            </div>
+                                            <div class = "exp-title">
+                                                <h3>Machine Learning Engineer</h3>
+                                            </div>
+                                        </div>
+                                        <div class = "exp-content">
+                                            <ul>
+                                                <li>
+                                                    Detected anomalies for enabling accurate failure detection in the data collected from 
+                                                    the Raspberry Pis.
+                                                </li>
+                                                <li>
+                                                    Trained a classification model with 85.7% accuracy on data with effective interpolation 
+                                                    of missing values.
+                                                </li>
+                                                <li>
+                                                    Designed and trained an LSTM based model with 92% accuracy for the classification of 
+                                                    Time-Series data.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SDE -->
+                                <div class = "exp-card-wrapper">
+                                    <div class = "exp-card">
+                                        <div class = "exp-header">
+                                            <div class = "time-period">
+                                                May 2023 - May 2024
+                                            </div>
+                                            <div class = "exp-title">
+                                                <h3>Software Developer Engineer</h3>
+                                            </div>
+                                        </div>
+                                        <div class = "exp-content">
+                                            <ul>
+                                                <li>
+                                                    Refactored and debugged existing code for data collection from Raspberry Pis resulting
+                                                    in improved efficiency.
+                                                </li>
+                                                <li>
+                                                    Implemented a new streamlined distributed system with separate folders and AWS DynamoDB 
+                                                    tables to enable simultaneous real-time data collection and upload from multiple 
+                                                    Raspberry Pis across 4 different locations.
+                                                </li>
+                                                <li>
+                                                    Utilized AWS CloudWatch, Lambda, SQS, and SNS to create a real-time alarm system for the 
+                                                    Raspberry Pis.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- CVC -->
+                        <li>
+                            <div class = "company-card">
+                                <h2>Computer Vision Center(LAMP, UAB)</h2>
+                                <!-- Thesis -->
+                                <div class = "exp-card-wrapper">
+                                    <div class = "exp-card">
+                                        <div class = "exp-header">
+                                            <div class = "time-period">
+                                                Aug 2021 - Dec 2021
+                                            </div>
+                                            <div class = "exp-title">
+                                                <h3>Machine Learning Researcher</h3>
+                                            </div>
+                                        </div>
+                                        <div class = "exp-content">
+                                            <ul>
+                                                <li>
+                                                    Analyzed image compression codecs and Variational Autoencoders to 
+                                                    identify areas for improvement.
+                                                </li>
+                                                <li>
+                                                    Visualized the Filters of the 1st layer of the models, and examined subsequent 
+                                                    layers of the models using various metrics including PCA, CKA, CCA, SVCCA, etc.
+                                                </li>
+                                                <li>
+                                                    Improved the size and the performance by evaluating a prototype.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- RRSC -->
+                        <li>
+                            <div class = "company-card">
+                                <h2>RRSC West(NSRC, ISRO)</h2>
+                                <!-- PS-1 -->
+                                <div class = "exp-card-wrapper">
+                                    <div class = "exp-card">
+                                        <div class = "exp-header">
+                                            <div class = "time-period">
+                                                May 2020 - June 2020
+                                            </div>
+                                            <div class = "exp-title">
+                                                <h3>Machine Learning Intern</h3>
+                                            </div>
+                                        </div>
+                                        <div class = "exp-content">
+                                            <ul>
+                                                <li>
+                                                    Generated and exported 500+ Satellite Images from Google Earth Engine using 
+                                                    JavaScript & Data Augmentation.
+                                                </li>
+                                                <li>
+                                                    Utilized DeepLabv3+ and UNet for high-res Satellite Image Segmentation to 
+                                                    detect Solar Farms and Sand Dunes.
+                                                </li>
+                                                <li>
+                                                    Achieved autonomous target detection for the precise tracking and monitoring 
+                                                    of solar farms(for maintenance) and sand dunes(An indicator for managing 
+                                                    disasters, particularly sandstorms).
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                </div>
+                <div id = "projects">
+                    <h1>Projects</h1>
+                </div>
+                <div id = "timeline">
+                    <h1>Timeline Visualization</h1>
+                    <div id = "timeline_chart">
+                        <svg id = "timeline_svg">
+                        </svg>
+                    </div>
+                    <div id = "progress_chart">
+                        <svg id = "progress_svg">
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
